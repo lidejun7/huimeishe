@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>汇美舍官网</title>
+	<link rel="shortcut icon" href="favicon.ico"/>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  
+  <body>
+  	<!--导航栏开始-->
+  	<div class="container hms_box_nav">
+  		<div class="row">
+				<nav class="navbar navbar-default hms_nav container">
+					<div class="row">
+					  <div class="container-fluid">
+					    <!-- 移动端 -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand hms_logo col-md-2" href="html/pinpaidongtai1.html">
+					      	<img src="images/logo.jpg"/>
+					      </a>
+					    </div>
+					
+					    <!--PC端-->
+					    <div class="collapse navbar-collapse hms_nav_list" id="bs-example-navbar-collapse-1">
+					      <!--<ul class="nav navbar-nav navbar-right hms_icon">-->
+					      <ul class="col-md-1 hms_icon navbar-right">	
+								  <li><a href="#" class="hms_iconA"></a></li>
+								  <li><a href="#" class="hms_iconB"></a></li>
+								  <li><a href="#" class="hms_iconC"></a></li>
+					        <!--<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					          </ul>
+					        </li>-->
+					      </ul>    	
+					    	
+					      <ul class="nav navbar-nav navbar-right hms_gaid">
+										  <li class="active"><a href="#">品牌动态</a></li>
+										  <li><a href="html/pinpaidongtai1.html">芳香应用</a></li>
+										  <li><a href="#">产品系列</a></li>
+										  <li><a href="#">进口产品</a></li>
+										  <li><a href="#">品牌故事</a></li>
+										  <li><a href="#">寻香足迹</a></li>
+										  <li><a href="#">香薰课堂</a></li>
+					        <!--<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Action</a></li>
+					            <li><a href="#">Another action</a></li>
+					            <li><a href="#">Something else here</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Separated link</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">One more separated link</a></li>
+					          </ul>
+					        </li>-->
+					      </ul>
+					    </div>
+					  </div>
+					</div>
+				</nav>  			
+  		</div>  		
+  	</div>
+  	<!--导航栏结束-->
+  	
+  	<!--轮播图开始-->
+	<div id="carousel-example-generic" class="carousel slide hms_banner" data-ride="carousel">
+	  <!-- 轮播索引 -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+	  </ol>
+	
+	  <!--轮播图片 -->
+	  <div class="carousel-inner" role="listbox" id="inner">
+	 <!--   <div class="item">
+		    <a href="#" class="small">
+		        <img src="images/banner201_4s.jpg" alt="">
+		    </a>
+		    <a href="#" style="background-image:url(images/banner201_4.jpg)" class="big"></a>      
+	    </div>  -->   
+	  </div>
+	
+	  <!-- 点击上下页 -->
+	  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	  </a>
+	</div> 
+
+	<script type="text/template" id="slider">
+		<%for(var i=0;i<json.length;i++){%>
+	    <div class="<%=(i==0)?'item active':'item'%>">
+	    	<%if(isMobile){%>
+		    <a href="#" class="small">
+	            <img src="<%=json[i].img%>" alt="">
+	        </a>
+		    <%}else{%>
+		    <a href="#" style="background-image:<%=json[i].bac%>" class="big"></a>
+		    <%}%>
+	    </div>	
+	    <%}%>
+	</script>
+  	<!--轮播图结束-->
+  	
+  	<!--全国芳疗服务-->
+	<section class="container">
+		<div class="row">
+			<p>
+				<img src="images/index_fang.png" alt="" />
+			</p>
+			<article>
+				<ul>
+					<li class="">
+						<a href="javascript:;">
+							<div class="hms_art">
+								<img src="images/service_01.jpg" alt="" />
+							</div>
+							<h4>寻找身边的芳疗师</h4>
+							<h6>加拿大CFA认证芳疗师、芳香顾问、推广员</h6>
+						</a>
+					</li>
+					<li class="">
+						<a href="javascript:;">
+							<div class="hms_art">
+								<img src="images/service_02.jpg" alt="" />
+							</div>
+							
+							<h4>寻找身边的芳疗师</h4>
+							<h6>加拿大CFA认证芳疗师、芳香顾问、推广员</h6>
+						</a>
+					</li>
+					<li class="">
+						<a href="javascript:;">
+							<div class="hms_art">
+								<img src="images/service_03.jpg" alt="" />
+							</div>
+							<h4>寻找身边的芳疗师</h4>
+							<h6>加拿大CFA认证芳疗师、芳香顾问、推广员</h6>	
+						</a>	
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<!--查找店铺地址-->
+	<p class="container hms_title">
+		<a href="">查找店铺地址</a>
+	</p>
+
+	<!--试用，积分兑换-->
+	<div class="container">
+		<div class="row hms_try">
+			<ul class="clearfix hms_try_ul">
+				<!--试用中心-->
+				<li class="hms_try_li hms_try_left">
+					<div class="try_box clearfix">
+						<!--文字部分-->
+						<div class="hms_mid_text mid_textbox_l clearfix">
+							<div class="mid_text_r">
+								<a href="">
+									<h1>试用中心</h1>
+									<h6>新品免费试用</h6>
+								</a>
+
+							</div>
+							<div class="mid_text_l">
+								<span><a href="">马上<br/>试用</a></span>
+							</div>
+
+						</div>
+						<div class="hms_mid_pos"></div>
+					</div>
+					<img src="images/try_img.jpg" alt="" />
+				</li>
+				<!--积分兑换-->
+				<li class="hms_try_li hms_try_right">
+					<div class="try_box clearfix">
+						<!--文字部分-->
+						<div class="hms_mid_text mid_textbox_r clearfix">
+							<div class="mid_text_a">
+								<a href="">
+									<h1>积分兑换</h1>
+									<h6>积分免费兑礼品</h6>
+								</a>
+							</div>
+							
+							<div class="mid_text_b">
+								<span><a href="">马上<br/>试用</a></span>
+							</div>								
+						</div>
+						<div class="hms_mid_pos"></div>
+						
+					</div>		
+					<img src="images/score_img.jpg" alt="" />
+				</li>
+			</ul>
+			
+			<div class="hms_try_icon">
+				<img src="images/icon_leaf.png" alt="" />
+			</div>
+		</div>
+	</div>
+	
+	<!--成为会员-->
+	<div class="container hms_content">
+		<div class="row">
+			<p class="hms_cont_title">
+				<img src="images/index_fang.png" alt="" />
+			</p>
+			<h4>成为会员的3种方式</h4>
+			<h6>(即日起,只要你喜爱汇美舍,即可通过一下3种方式免费成为汇美舍预备会员)</h6>
+			
+			<ul class="hms_cont_ul row">
+				<li class="col-sm-4 col-xs-12">
+					<div class="hms_cont_box">
+						<h5>官网注册</h5>
+						<p>在汇美舍官网注册成为官网用户即可</p>						
+					</div>
+
+				</li>
+				<li class="col-sm-4 col-xs-12">
+					<div class="hms_cont_box">
+						<h5>官网注册</h5>
+						<p>在汇美舍官网注册成为官网用户即可</p>						
+					</div>					
+				</li>
+				<li class="col-sm-4 col-xs-12">
+					<div class="hms_cont_box">
+						<h5>官网注册</h5>
+						<p>在汇美舍官网注册成为官网用户即可</p>						
+					</div>					
+				</li>
+			</ul>
+			
+			
+			
+		</div>
+	</div>
+
+	<!--新会员福利-->
+	<div class="container hms_newtip hidden-xs">
+		<div class="col-sm-12 hms_newtip_box">
+			<h4>新会员权益</h4>
+			<ol>
+				<li>收到汇美舍一手专业香薰文化资讯</li>
+				<li>线上线下各色活动　优先参与权</li>
+				<li>入会后首次任意消费即可成为正式会员，尊享会员回馈（积分抵现换礼，会员专享优惠，生日礼物）</li>
+				<li>入会后首次消费满300元或以上，额外赠送300积分</li>
+				<li>入会后首次消费满500元或以上，额外赠送800积分</li>
+				<li>更多会员尊享权益，请继续关注</li>
+			</ol>
+		</div>
+	</div>
+	
+	<!--页面尾部-->
+	<footer class="container-fluid">
+		<div class="container clearfix">
+			<div class="row clearfix">
+				<h3>广州汇美舍天然用品连锁有限公司于2001年创立。国内连锁精油护肤品牌，专注精油护肤及香薰文化16年。全国各类型店铺、销售网点逾1000家，会员人数超100万。</h3>
+				<p>&nbsp;</p>
+				<div class="container">
+					<div class="row">
+						<div class="hms_foot">
+							<ul>
+								<li><h3>服务保证</h3></li>
+								<li><a href="">正品保证</a></li>
+								<li><a href="">客服在线时间</a></li>
+								<li><a href="">查找店铺</a></li>
+							</ul>
+						</div>
+						<div class="hms_foot">
+							<ul>
+								<li><h3>服务保证</h3></li>
+								<li><a href="">正品保证</a></li>
+								<li><a href="">客服在线时间</a></li>
+								<li><a href="">查找店铺</a></li>
+							</ul>
+						</div>
+						<div class="hms_foot">
+							<ul>
+								<li><h3>服务保证</h3></li>
+								<li><a href="">正品保证</a></li>
+								<li><a href="">客服在线时间</a></li>
+								<li><a href="">查找店铺</a></li>
+							</ul>
+						</div>
+						<div class="hms_foot">
+							<ul>
+								<li><h3>服务保证</h3></li>
+								<li><a href="">正品保证</a></li>
+								<li><a href="">客服在线时间</a></li>
+								<li><a href="">查找店铺</a></li>
+							</ul>
+						</div>
+						<div class="hms_foot">
+							<ul>
+								<li><h3>服务保证</h3></li>
+								<li><a href="">正品保证</a></li>
+								<li><a href="">客服在线时间</a></li>
+								<li><a href="">查找店铺</a></li>
+							</ul>
+						</div>
+				
+					</div>
+				</div>
+				<p class="clearfix">
+					<a href="">加盟代理&nbsp;</a>|
+					<a href="">人才招聘&nbsp;</a>|
+					<a href="">联系我们&nbsp;</a>|
+					<a href="">门店登录&nbsp;</a>|
+					<a href="">经销商登录&nbsp;</a>|
+					<a href="">加盟代理&nbsp;</a>|
+					<a href="">加盟代理</a>
+				</p>
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 hidden-xs hms_foot_spana">
+							<img src="images/logo2.gif" alt="" />
+						</div>
+						<div class="col-sm-9 hms_foot_span">
+							<span>Copyright © 2014 prettyvalley.cn All Rights Reserved 粤ICP备07067494号   使用本站即表示接受汇美舍用户协议 </span>
+							<span>广州汇美舍天然用品连锁有限公司 Pretty Valley (GZ China) Natural Commodity Franchised Co.,Ltd.</span>
+						</div>						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/template-native.js"></script>
+    <script type="text/javascript" src='js/index.js'></script>    
+  </body>
+</html>
